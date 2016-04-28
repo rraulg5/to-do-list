@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Simple To Do List">
+    <meta name="author" content="rraulg5">
+
+    <title>Simple To Do List</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a target="_blank" href="https://github.com/rraulg5/to-do-list">GitHub Repo</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Simple To Do List</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input id="txtTask" type="text" class="form-control" placeholder="New task">
+          </div>
+
+          <div id="error" class="alert alert-danger hidden" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            The task can't be empty
+          </div>
+
+          <button type="button" class="btn btn-success" id="btnAdd">Add</button>
+          <button type="button" class="btn btn-danger" id="btnClear">Clear All</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-12">
+          <ul id="todo-tasks">
+
+          </ul>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p><a target="_blank" href="http://raulgarcia.mx">http://raulgarcia.mx</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
